@@ -1,2 +1,2 @@
 test: test.c
-	clang -lpthread /usr/lib64/libgc.so  test.c -o test
+	gcc -lpthread /usr/lib64/libgc.so -lgmp -fopenmp  test.c -o test
