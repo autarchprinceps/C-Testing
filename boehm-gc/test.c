@@ -37,7 +37,7 @@ int main() {
 				// assert(*p2 == 0);
 				*p2 = (int *)malloc(sizeof(int) * (i / 100 + 1));
 				if(i % 1000 == 0)
-					printf("Malloc size = %d\n", GC_get_heap_size());
+					printf("Malloc size = %d\n", GC_get_heap_size()); // TODO Different ceilometer
 			}
 		}
 	return 0;
